@@ -7,7 +7,7 @@ $.get(
 		function (data) {
 		var temp = Math.round(data.main.temp - 273) + '&degC' + '<img style="" src = "https://openweathermap.org/img/w/' + data.weather[0].icon + '.png">';
 		document.getElementById('weather').innerHTML = temp;
-
+			// console.log(data)
 			
 		}
 )

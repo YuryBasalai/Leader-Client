@@ -4,7 +4,7 @@ body
 
 	.catalog
 		height: 1050px
-		overflow-y: scroll
+		//overflow-y: scroll
 		//touch-action: pan-y
 		&__title
 			text-align: center
@@ -43,6 +43,7 @@ body
 			justify-content: space-between
 			.button
 				&-left
+					+medium
 					border-radius: 45px
 					width: 324px
 					min-height: 75px
@@ -58,6 +59,19 @@ body
 					&:active
 						background: #BDBDBD
 			&-menu
-				background-color: red
 				display: flex
 				flex-direction: column
+			&-window
+				//background-color: red
+				width: 65%
+				&__title
+					text-align: center
+					font-size: 30px
+					color: #333333
+					+bold 
+					padding: 0
+					margin: 0
+					padding-bottom: 20px
+
+
+				
