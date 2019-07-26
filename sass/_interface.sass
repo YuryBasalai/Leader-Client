@@ -3,8 +3,12 @@ body
 	color: #F2F2F2
 
 	.catalog
-		height: 1050px
-		//overflow-y: scroll
+		height: 1030px
+		overflow-y: scroll
+		//scrollbar-width: none
+		&::-webkit-scrollbar 
+    width: 0
+    height: 0
 		//touch-action: pan-y
 		&__title
 			text-align: center
@@ -35,6 +39,7 @@ body
 				padding: 15px
 				word-wrap: break-word
 				cursor: pointer
+				outline: none
 				&:active
 					background: #BDBDBD
 		&__block
@@ -56,22 +61,23 @@ body
 					background: #F2F2F2
 					box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25)
 					margin-bottom: 20px
-					&:active
+					outline: none
+					&:focus
 						background: #BDBDBD
+
 			&-menu
 				display: flex
 				flex-direction: column
 			&-window
 				//background-color: red
 				width: 65%
-				&__title
-					text-align: center
-					font-size: 30px
-					color: #333333
-					+bold 
-					padding: 0
-					margin: 0
-					padding-bottom: 20px
+				//display: none
+	
+				&.hide 
+					display: none
 
+
+				&.show 
+					display: block
 
 				
